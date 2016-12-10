@@ -1,0 +1,27 @@
+{
+  "name": "nappi",
+  "version": "0.0.0-development",
+  "description": "Node API server inspired by JSONAPI-Resources gem for Rails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nappi-node/nappi.git"
+  },
+  "keywords": [
+    "web",
+    "jsonapi"
+  ],
+  "author": "Egor Kalinichev <ekalinichev@jelly-beans.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nappi-node/nappi/issues"
+  },
+  "homepage": "https://github.com/nappi-node/nappi#readme",
+  "devDependencies": {
+    "semantic-release": "6.3.2"
+  }
+}
