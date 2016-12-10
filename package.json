@@ -4,7 +4,7 @@
   "description": "Node API server inspired by JSONAPI-Resources gem for Rails",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -22,6 +22,14 @@
   },
   "homepage": "https://github.com/nappi-node/nappi#readme",
   "devDependencies": {
+    "ava": "0.17.0",
     "semantic-release": "6.3.2"
+  },
+  "ava": {
+    "files": ["tests/*-test.js"],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true,
+    "powerAssert": false
   }
 }
