@@ -12,5 +12,5 @@ deployment:
     commands:
       - npm run docs
       - git add --force docs/ && git commit -m "Documentation for $CIRCLE_SHA1"
-      - git push git@heroku.com:nappi-node.git $CIRCLE_SHA1:master
+      - git push https://git.heroku.com/nappi-node.git $CIRCLE_SHA1:master
       - git reset --hard HEAD~1
