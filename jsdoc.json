@@ -1,0 +1,29 @@
+{
+  "source": {
+    "include": ["packages"],
+    "includePattern": "\\.js",
+    "excludePattern": "\\/test\\/|\\/_|-test\\.js$"
+  },
+
+  "opts": {
+    "destination": "docs/",
+    "encoding": "utf8",
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/ink-docstrap/template"
+  },
+
+  "templates": {
+    "systemName": "NAPPI",
+    "copyright": "&copy; Egor Kalinichev, 2017",
+    "includeDate": false,
+    "navType": "inline",
+    "theme": "yeti",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": false,
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "search": false
+  }
+}

@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: 7.0.0
+test:
+  pre:
+    - npm run lint
+deployment:
+  npm:
+    branch: master
+    commands:
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+      - npm run semantic-release
+  docs:
+    branch: master
+    commands:
+      - npm run docs
+      - git add --force docs/ && git commit -m "Documentation for $CIRCLE_SHA1"
+      - git push https://git.heroku.com/nappi-node.git $CIRCLE_SHA1:master
+      - git reset --hard HEAD~1
