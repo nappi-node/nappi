@@ -21,7 +21,7 @@ test('NappiError#withCause method', t => {
   t.is(result, error, 'returns self');
   t.is(error.cause, otherError, 'sets "cause" property to argument');
 
-  const notError = {test: "object"};
+  const notError = {test: 'object'};
 
   error.withCause(notError);
 

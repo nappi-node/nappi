@@ -1,6 +1,9 @@
 machine:
   node:
     version: 7.0.0
+test:
+  pre:
+    - npm run lint
 deployment:
   npm:
     branch: master

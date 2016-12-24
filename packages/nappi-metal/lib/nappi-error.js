@@ -8,7 +8,7 @@
  * @memberOf nappi-metal
  */
 class NappiError extends Error {
-  get cause() { return this._cause }
+  get cause() { return this._cause; }
 
   /**
    * @param {string} message Error message
